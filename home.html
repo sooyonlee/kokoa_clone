@@ -7,36 +7,45 @@
       href="https://nomadcoders.co/m.png"
     />
     <title>Home - My first website.</title>
-    <link href="styles.css" rel='stylesheet'/>
+    <link href="styles.css" rel="stylesheet" />
     <style>
-      html{
+      html {
         background-color: tomato;
       }
-      body{
-        margin:0;
+      body {
+        margin: 0;
         margin: 20px 5px 10px 30px;
+        padding: 20px 10px;
         background-color: thistle;
       }
-      div{
-        margin-left: 50px;
+      div {
+        /* margin-left: 50px;
         height: 150px;
-        width: 150px;
-        background-color:  whitesmoke;
-      }
-      span{
-        background-color: turquoise;
+        width: 150px; */
+        background-color: whitesmoke;
+        padding: 10px;
       }
 
-      h1{
-        color: white;
-        font-size: 20px;
-        font-weight: 800;
-        font-style:italic;
-        text-decoration:underline;
       }
-      span{
-        text-align:center;
-        color:tomato
+      #first {
+        background-color: whitesmoke;
+        width: 150px;
+        height: 150px;
+      }
+      #second {
+        background-color: teal;
+        width: 100px;
+        height: 100px;
+      }
+      #third {
+        background-color: wheat;
+        width: 50px;
+        height: 50px;
+      }
+      #fourth {
+        background-color: blanchedalmond;
+        width: 25px;
+        height: 25px;
       }
     </style>
     <meta charset="utf-8" />
@@ -44,44 +53,13 @@
   </head>
 
   <body>
-    <h1>Hello! This is my first Website</h1>
-    <a href="http://google.com" target="_blank">Go to google.com</a>
-    <img
-      src="https://www.area-arch.it/wp-content/uploads/sites/6/2017/03/062-071-perrault-OK-5.jpg"
-    />
-    <p>My name is <abbr title="Lee Soo Yeon">LSY</abbr></p>
-    <p>I like to live in <strong> South Korea</strong></p>
-    <p>2<sup>5</p>
-    <audio
-    src = "https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
-    controls = "enabled" 
-    autoplay = "true"></audio>
-    <!-- <dialog open>
-      <p>Greetings, one and all!</p>
-    </dialog> -->
-
-    <form>
-      <!-- <label for="profile">Profile Photo</label>
-      <input id ="profile" type= "file" accept=".pdf"/>
-       -->
-      <label for="website">website</label>
-      <input id ="website" required placeholder="Name" type="date"/>
-
-      <!-- <input required placeholder = "Last Name" disabled type= "text"/>
-      <input required placeholder="Username" type= "text"/>
-      <input required placeholder="Password" minlength= "10" type= "password"/> -->
-      <input type="submit" value="Create Acount" />
-    </form>
-      <div></div>
-      <div></div>
-      <div></div>
-      <span>hello</span>
-      <span>hello</span>
-      <span>hello</span>
-      <a href="#">link</a>
-      <span>hello</span>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem vel aspernatur minus ex quia aperiam quam reprehenderit, magnam minima labore aliquam sit, ea atque voluptas, dolorum fuga facilis porro omnis?</p>
-      <img/>
+    <div id="first">
+      <div id="second">
+        <div id="third">
+          <div id="fourth"></div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
