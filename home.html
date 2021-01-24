@@ -12,16 +12,15 @@
       body {
         margin: 20px;
       }
-      .btn {
-        padding: 5px 10px;
-        border-radius: 5px;
-      }
-      .teal {
+      div {
+        display: inline-block;
+
+        /* inline-block은 후져서 거의 사용하지 않는다.
+        창의 크기에 따라 block의 배치가 달라진다. */
+
+        width: 50px;
+        height: 50px;
         background-color: teal;
-      }
-      .tomato {
-        background-color: tomato;
-        color: white;
       }
     </style>
     <meta charset="utf-8" />
@@ -29,11 +28,8 @@
   </head>
 
   <body>
-    <span class="btn teal">hello</span>
-    <span class="btn tomato">hello</span>
-    <span class="btn teal">hello</span>
-    <span class="btn tomato">hello</span>
-    <span class="btn teal">hello</span>
-    <span class="btn tomato">hello</span>
+    <div></div>
+    <div></div>
+    <div></div>
   </body>
 </html>
