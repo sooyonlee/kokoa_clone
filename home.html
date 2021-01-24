@@ -10,17 +10,19 @@
     <link href="styles.css" rel="stylesheet" />
     <style>
       body {
+        height: 100vh;
+        display: flex;
         margin: 20px;
+        justify-content: space-evenly;
+        align-items: center;
       }
       div {
-        display: inline-block;
-
-        /* inline-block은 후져서 거의 사용하지 않는다.
-        창의 크기에 따라 block의 배치가 달라진다. */
-
-        width: 50px;
-        height: 50px;
+        width: 300px;
+        height: 300px;
         background-color: teal;
+      }
+      #second {
+        background-color: wheat;
       }
     </style>
     <meta charset="utf-8" />
@@ -29,7 +31,7 @@
 
   <body>
     <div></div>
-    <div></div>
+    <div id="second"></div>
     <div></div>
   </body>
 </html>
