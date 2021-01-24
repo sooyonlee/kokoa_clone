@@ -11,13 +11,21 @@
     <style>
       body {
         height: 100vh;
-        display: flex;
         margin: 20px;
-        justify-content: space-evenly;
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: column; */
         align-items: center;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
       }
       div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 300px;
+        font-size: 28px;
+        color: white;
         height: 300px;
         background-color: teal;
       }
@@ -30,8 +38,9 @@
   </head>
 
   <body>
-    <div></div>
-    <div id="second"></div>
-    <div></div>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+    <div>4</div>
   </body>
 </html>
