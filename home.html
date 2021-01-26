@@ -15,29 +15,39 @@
         margin: 50px;
       }
       div {
-        width: 300px;
-        height: 300px;
+        width: 150px;
+        height: 150px;
         background-color: wheat;
         position: relative;
       }
-      .green {
-        background-color: teal;
-        height: 100px;
-        bottom: 0px;
-        position: absolute;
-        /*absolute는 가장 가까운 relative 부모를 기준으로 이동시킴
-        relative한 부모를 찾지 못한 경우 body가 부모가 됨*/
-        width: 100px;
+      div:first-child {
+        background-color: tomato;
       }
-      /* element가 처음 놓인 자리에서 상하좌우로 움직인다.  */
+      div:last-child {
+        background-color: teal;
+      }
+      span {
+        background-color: tomato;
+      }
+      span:nth-child(3n + 1) {
+        background-color: teal;
+      }
     </style>
-    <meta charset="utf-8" />
-    <meta name="description" content="This is my website" />
   </head>
 
   <body>
-    <div>
-      <div class="green"></div>
-    </div>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
   </body>
 </html>
