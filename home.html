@@ -10,26 +10,23 @@
     <link href="styles.css" rel="stylesheet" />
     <style>
       body {
-        height: 100vh;
+        background-color: white;
+        height: 1000vh;
         margin: 20px;
-        display: flex;
-        justify-content: space-between;
-        /* flex-direction: column; */
-        align-items: center;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
       }
       div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 300px;
-        font-size: 28px;
-        color: white;
         height: 300px;
+        color: white;
         background-color: teal;
       }
-      #second {
+      #green {
+        background-color: teal;
+
+        position: fixed;
+        opacity: 0.2;
+      }
+      #diff {
         background-color: wheat;
       }
     </style>
@@ -38,9 +35,7 @@
   </head>
 
   <body>
-    <div>1</div>
-    <div id="second">2</div>
-    <div>3</div>
-    <div>4</div>
+    <div id="green"></div>
+    <div id="diff"></div>
   </body>
 </html>
