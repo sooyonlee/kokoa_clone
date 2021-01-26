@@ -12,30 +12,33 @@
       body {
         background-color: white;
         height: 1000vh;
-        margin: 20px;
+        margin: 50px;
       }
       div {
         width: 300px;
         height: 300px;
-        color: white;
-        background-color: teal;
-      }
-      #green {
-        background-color: teal;
-
-        position: fixed;
-        opacity: 0.2;
-      }
-      #diff {
         background-color: wheat;
+        position: relative;
       }
+      .green {
+        background-color: teal;
+        height: 100px;
+        bottom: 0px;
+        right: 0px;
+        position: absolute;
+        /*absolute는 가장 가까운 relative 부모를 기준으로 이동시킴
+        relative한 부모를 찾지 못한 경우 body가 부모가 됨*/
+        width: 100px;
+      }
+      /* element가 처음 놓인 자리에서 상하좌우로 움직인다.  */
     </style>
     <meta charset="utf-8" />
     <meta name="description" content="This is my website" />
   </head>
 
   <body>
-    <div id="green"></div>
-    <div id="diff"></div>
+    <div>
+      <div class="green"></div>
+    </div>
   </body>
 </html>
