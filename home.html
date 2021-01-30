@@ -15,37 +15,25 @@
         margin: 50px;
       }
 
-      span {
-        color: tomato;
-        background-color: yellowgreen;
-        padding: 5px;
-        border-radius: 10px;
-        text-decoration-line: underline;
+      input {
+        border: 1px solid wheat;
       }
-      p span {
-        color: white;
-        text-decoration: none;
+      input:required {
+        border-color: tomato;
       }
-      div >span {
-        text-decoration: underline;
-      }
-      p + span {
-        text-decoration: underline;
-      }
+      input[placeholder~="name"] {
+        background-color: pink;
       }
     </style>
   </head>
 
   <body>
     <div>
-      <span>hello</span>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto
-        fuga dolorum incidunt labore ratione excepturi modi id animi illo?
-        Praesentium vel fugiat at blanditiis repudiandae magni ullam fuga
-        quidem!<span> inside</span>
-      </p>
-      <span>hello</span>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="password" required placeholder="password" />
+      </form>
     </div>
   </body>
 </html>
