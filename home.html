@@ -14,40 +14,38 @@
         height: 1000vh;
         margin: 50px;
       }
-      div {
-        width: 150px;
-        height: 150px;
-        background-color: wheat;
-        position: relative;
-      }
-      div:first-child {
-        background-color: tomato;
-      }
-      div:last-child {
-        background-color: teal;
-      }
+
       span {
-        background-color: tomato;
+        color: tomato;
+        background-color: yellowgreen;
+        padding: 5px;
+        border-radius: 10px;
+        text-decoration-line: underline;
       }
-      span:nth-child(3n + 1) {
-        background-color: teal;
+      p span {
+        color: white;
+        text-decoration: none;
+      }
+      div >span {
+        text-decoration: underline;
+      }
+      p + span {
+        text-decoration: underline;
+      }
       }
     </style>
   </head>
 
   <body>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
-    <span>hello</span>
+    <div>
+      <span>hello</span>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto
+        fuga dolorum incidunt labore ratione excepturi modi id animi illo?
+        Praesentium vel fugiat at blanditiis repudiandae magni ullam fuga
+        quidem!<span> inside</span>
+      </p>
+      <span>hello</span>
+    </div>
   </body>
 </html>
