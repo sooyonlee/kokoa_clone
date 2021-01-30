@@ -14,36 +14,31 @@
         height: 1000vh;
         margin: 50px;
       }
-      a:visited {
-        color: tomato;
-      }
-      a:hover {
-        color: teal;
-      }
-      a:focus {
-        color: turquoise;
-      }
-      form {
-        border: 1px solid salmon;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
+
+      input::placeholder {
+        color: yellow;
       }
 
-      form:hover input {
-        background-color: sienna;
+      p::selection {
+        background-color: yellowgreen;
+        color: white;
+        font-size: 30px;
       }
-      /*form이 hover(마우스가 input에 올라가 있는 상태)일 때 input의 b.c가 sienna로 바뀐다. 
-      form:hover input:focus --> form이 hover input이 focus일 때 b.c가 sienna로 바뀐다.*/
+      p::first-letter {
+        font-size: 20px;
+        color: pink;
+      }
     </style>
   </head>
 
   <body>
-    <a href="https://apple.com">Go to Apple</a>
     <form>
-      <input type="text" name="" id="" />
-      <input type="text" name="" id="" />
-      <input type="text" name="" id="" />
+      <input type="text" placeholder="name" />
     </form>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quod
+      corporis nemo, possimus voluptate necessitatibus repellat placeat tempore?
+      Quibusdam nisi quis id eius illo ut totam minima debitis deleniti dolore.
+    </p>
   </body>
 </html>
