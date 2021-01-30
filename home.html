@@ -14,26 +14,36 @@
         height: 1000vh;
         margin: 50px;
       }
+      a:visited {
+        color: tomato;
+      }
+      a:hover {
+        color: teal;
+      }
+      a:focus {
+        color: turquoise;
+      }
+      form {
+        border: 1px solid salmon;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
 
-      input {
-        border: 1px solid wheat;
+      form:hover input {
+        background-color: sienna;
       }
-      input:required {
-        border-color: tomato;
-      }
-      input[placeholder~="name"] {
-        background-color: pink;
-      }
+      /*form이 hover(마우스가 input에 올라가 있는 상태)일 때 input의 b.c가 sienna로 바뀐다. 
+      form:hover input:focus --> form이 hover input이 focus일 때 b.c가 sienna로 바뀐다.*/
     </style>
   </head>
 
   <body>
-    <div>
-      <form>
-        <input type="text" placeholder="First name" />
-        <input type="text" placeholder="Last name" />
-        <input type="password" required placeholder="password" />
-      </form>
-    </div>
+    <a href="https://apple.com">Go to Apple</a>
+    <form>
+      <input type="text" name="" id="" />
+      <input type="text" name="" id="" />
+      <input type="text" name="" id="" />
+    </form>
   </body>
 </html>
