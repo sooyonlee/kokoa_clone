@@ -1,40 +1,27 @@
 <!DOCTYPE html>
 <html lang="kr">
   <head>
-    <link
-      rel="shortxut icon"
-      sizes="16x16 32x32 64x64"
-      href="https://nomadcoders.co/m.png"
-    />
-    <title>Home - My first website.</title>
-    <link href="styles.css" rel="stylesheet" />
+    <title>The Nico Times</title>
     <style>
-      :root {
-        --main-color: #489ee3;
-        --default-border: 1px solid var(--main-color);
-      }
-      body {
-        background-color: white;
-        height: 1000vh;
-        margin: 50px;
-      }
-      p {
-        background-color: var(--main-color);
-      }
       a {
-        color: var(--main-color);
-        border: var(--default-border);
+        color: wheat;
+        background-color: tomato;
+        text-decoration: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        font-size: 55px;
+        transition: background-color 3s ease-in-out, color 5s ease-in-out;
+        transition: all 1.2s ease-in-out;
+      }
+      a:hover {
+        color: tomato;
+        background-color: wheat;
+        border-radius: 20px;
       }
     </style>
   </head>
 
   <body>
-    <a href="#">website </a>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-      dolores molestiae architecto earum possimus fugit? Quaerat dolor officiis
-      illum, totam a dolore consequuntur mollitia obcaecati temporibus ratione
-      laboriosam repellendus est.
-    </p>
+    <a href="#">Go home</a>
   </body>
 </html>
