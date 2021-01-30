@@ -3,23 +3,48 @@
   <head>
     <title>The Nico Times</title>
     <style>
-      img{
-        size: 50px;
-        border: 10px solid black;
-        border-radius: 50%;
-        transition: transform 2s ease-in-out;
-        /* transform: rotateY(50deg) rotateX(20deg) rotateZ(10deg) ;
-        transform: scaleY(2);      */
-         }
-      img:hover{
-        transform: rotate3d(1, 2.0, 3.0, 10deg);
+      body{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
       }
-      /*transition은 state가 아닌 root에 있어야 한다!
-      state에 있는 경우 hover에서 벗어나면 바로 transform 효과 사라짐*/
+    @keyframes syCoinFlip{
+      0% {
+        transform:rotateX(0);
+        border-radius: 0px;
+      }
+      25%{
+        transform: scale(2);
+        border-radius: 20px;
+
+
+      }
+      50%{
+        transform: rotateY(180deg) translateY(300px);
+        border-radius:50px;
+        border-color:rgb(111, 111, 175);
+      }
+      75%{
+        transform: scale(2);
+        border-radius: 20px;
+      }
+      100%{
+        transform:rotateX(0);
+      }
+
+    }
+
+    img{
+      width: 1000px;
+      border: 10px solid black;
+      border-radius: 50%;
+      animation: syCoinFlip 4s ease-in-out infinite;
+      }
+ 
     </style>
   </head>
   <img src="disney.jpg"
   <body>
-    <a href="#">Go home</a>
   </body>
 </html>
