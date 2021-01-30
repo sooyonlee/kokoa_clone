@@ -9,36 +9,32 @@
     <title>Home - My first website.</title>
     <link href="styles.css" rel="stylesheet" />
     <style>
+      :root {
+        --main-color: #489ee3;
+        --default-border: 1px solid var(--main-color);
+      }
       body {
         background-color: white;
         height: 1000vh;
         margin: 50px;
       }
-
-      input::placeholder {
-        color: yellow;
+      p {
+        background-color: var(--main-color);
       }
-
-      p::selection {
-        background-color: yellowgreen;
-        color: white;
-        font-size: 30px;
-      }
-      p::first-letter {
-        font-size: 20px;
-        color: pink;
+      a {
+        color: var(--main-color);
+        border: var(--default-border);
       }
     </style>
   </head>
 
   <body>
-    <form>
-      <input type="text" placeholder="name" />
-    </form>
+    <a href="#">website </a>
     <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quod
-      corporis nemo, possimus voluptate necessitatibus repellat placeat tempore?
-      Quibusdam nisi quis id eius illo ut totam minima debitis deleniti dolore.
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+      dolores molestiae architecto earum possimus fugit? Quaerat dolor officiis
+      illum, totam a dolore consequuntur mollitia obcaecati temporibus ratione
+      laboriosam repellendus est.
     </p>
   </body>
 </html>
