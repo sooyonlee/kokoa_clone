@@ -82,6 +82,25 @@
   right: 10px;
   font-size: 12px;
 }
+
 .open-post__heart-count span {
   margin-left: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(4);
+  }
+  100% {
+    color: white;
+  }
+}
+
+.open-post__heart-count:hover i {
+  animation: heartBeat 1.5s linear infinite;
 }
